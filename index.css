@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@media screen and (max-width: 400px) {
+    #theKey {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #theDoor {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #theDemons {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+#theKey {
+    mix-blend-mode: normal;
+}
+
+#theDoor {
+    mix-blend-mode: normal;
+}
+
+#theDemons {
+    mix-blend-mode: normal;
+}
+
+body {
+    background-color: rgb(45, 13, 13);
+    height: auto;
+    width: 95%;
+    align-content: center;
+}
+
+#container {
+    background-image: url(https://i.makeagif.com/media/3-03-2014/2FBkOY.gif);
+    background-color: rgb(21, 5, 5);
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr;
+    border: 2px solid rgb(0, 0, 0);
+    mix-blend-mode: normal;
+}
+
+.key-location {
+    /* background-color: rgb(45, 13, 13); */
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    z-index: 1;
+    cursor: crosshair;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+}
+
+ :root:before {
+    z-index: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient( circle 15vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .95) 90%, rgba(0, 0, 0, .99) 100%)
+}
+
+@media screen and (max-width: 400px) {
+     :root:before {
+        background: radial-gradient( circle 12vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .95) 80%, rgba(0, 0, 0, .99) 100%)
+    }
+}
+
+#top-bar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: left;
+    z-index: 1
+}
+
+.top-content {
+    display: flex;
+    position: relative;
+    font-family: 'Julius Sans One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: rgb(203, 12, 12);
+    background-color: transparent;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0;
+    padding-left: 1rem;
+    z-index: 0;
+}
+
+@media screen and (max-width: 400px) {
+    #Timer {
+        font-size: .8rem;
+    }
+}
+
+#Timer {
+    font-family: 'Julius Sans One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: rgb(255, 0, 0);
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 1rem auto;
+    padding: .8rem;
+    font-size: .8rem;
+}
+
+#inventory {
+    display: flex;
+    border: solid 1px rgb(116, 0, 0);
+    align-items: center;
+    height: 1rem;
+    width: 80%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.596);
+    margin: .5rem auto;
+    padding: 1rem;
+}
+
+h5 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: rgb(203, 12, 12);
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+#title-timer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#bag {
+    position: relative;
+}
+
+#theme {
+    background-color: aqua;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-bg {
+    background-image: url(https://i.pinimg.com/originals/8e/07/18/8e071836dc5d3f534138455fda54cc68.gif);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box {
+    height: 10rem;
+    width: 20rem;
+    background-color: rgba(220, 20, 23, 0.603);
+    font-size: 30px;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading {}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading:before {}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box.loading:after {}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-closeIcon {}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content-pane {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.jconfirm-buttons {
+    position: relative;
+    top: 1.5rem;
+}
+
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.413);
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+:active.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(181, 38, 7);
+    background-color: rgba(101, 6, 24, 0.413);
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#buttn {
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(181, 38, 7);
+    background-color: rgba(101, 6, 24, 0.413);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+}
